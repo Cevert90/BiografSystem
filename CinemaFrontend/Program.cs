@@ -12,13 +12,13 @@ builder.Services.AddAuthentication("Cookies")
 // Kopplar samman MoviesApi med bas-URL för HTTP-anrop.
 builder.Services.AddHttpClient("MoviesApi", client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5250/");
+    client.BaseAddress = new Uri("https://movies-api-christoffer-fbgmaagbeqc2e9gy.norwayeast-01.azurewebsites.net/");
 });
 
 // Kopplar samman ScreeningsApi med bas-URL för HTTP-anrop.
 builder.Services.AddHttpClient("ScreeningsApi", client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5130/");
+    client.BaseAddress = new Uri("https://screenings-api-christoffer-esgxh0e7e0ffhrcz.norwayeast-01.azurewebsites.net/");
 });
 
 var app = builder.Build();
