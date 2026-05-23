@@ -1,0 +1,29 @@
+﻿@model List<CinemaFrontend.Models.ScreeningViewModel>
+
+<h1>Visningar</h1>
+
+@* Visar meddelande om inga visningar finns för filmen. *@
+@if (!Model.Any())
+{
+    <p>Inga visningar hittades för denna film.</p>
+}
+else
+{
+    <h2>@Model.First().MovieTitle</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px;">
+        @foreach (var screening in Model)
+        {
+            <div style="background-color: #1a1a1a; border: 1px solid #c9a84c; border-radius: 12px; padding: 15px; width: 180px;">
+                <div style="font-size: 24px; font-weight: bold; color: #c9a84c;">
+                    @screening.ShowTime.ToString("HH:mm")
+                </div>
+                <div style="margin-top: 8px; color: #888;">@screening.ScreeningRoom</div>
+                <div style="margin-top: 4px; color: #888;">@screening.AvailableSeats platser</div>
+                <div style="margin-top: 8px; color: #f0f0f0; font-weight: bold;">@screening.Price kr</div>
+            </div>
+        }
+    </div>
+}
+
+<a href="/Movies">Tillbaka till filmer</a>

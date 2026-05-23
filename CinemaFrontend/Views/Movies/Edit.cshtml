@@ -1,0 +1,59 @@
+﻿@model CinemaFrontend.Models.MovieViewModel
+
+<h1>Redigera film</h1>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div>
+        <label>Titel</label>
+        <input type="text" name="Title" value="@Model.Title" />
+    </div>
+    <div>
+        <label>Regissör</label>
+        <input type="text" name="Director" value="@Model.Director" />
+    </div>
+    <div>
+        <label>Skådespelare</label>
+        <input type="text" name="Actors" value="@Model.Actors" />
+    </div>
+    <div>
+        <label>Originaltitel</label>
+        <input type="text" name="OriginalTitle" value="@Model.OriginalTitle" />
+    </div>
+    <div>
+        <label>Originalspråk</label>
+        <input type="text" name="OriginalLanguage" value="@Model.OriginalLanguage" />
+    </div>
+    <div>
+        <label>Genre</label>
+        <input type="text" name="Genre" value="@Model.Genre" />
+    </div>
+    <div>
+        <label>Åldersgräns</label>
+        <input type="text" name="AgeRating" value="@Model.AgeRating" />
+    </div>
+    <div>
+        <label>Beskrivning</label>
+        <input type="text" name="Description" value="@Model.Description" />
+    </div>
+    <div>
+        <label>Längd (minuter)</label>
+        <input type="number" name="DurationMinutes" value="@Model.DurationMinutes" />
+    </div>
+    <div>
+        <label>Premiär</label>
+        <input type="date" name="Premiere" value="@Model.Premiere.ToString("yyyy-MM-dd")" />
+    </div>
+    <div>
+        <label>Pris</label>
+        <input type="number" name="Price" value="@Model.Price" />
+    </div>
+    <div>
+        <label>Visas nu</label>
+        <input type="checkbox" name="IsShowing" value="true" @(Model.IsShowing ? "checked" : "") />
+    </div>
+    <button type="submit">Spara</button>
+    <input type="hidden" name="ImageUrl" value="@Model.ImageUrl" /> @*Gör så att bilden följer med vid redigering av "visas nu"*@
+</form>
+
+<a href="/Movies">Tillbaka</a>

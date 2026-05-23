@@ -1,0 +1,53 @@
+﻿@model CinemaFrontend.Models.MovieViewModel
+
+<h1>Lägg till film</h1>
+
+<form method="post">
+    <div>
+        <label>Titel</label>
+        <input type="text" name="Title" />
+    </div>
+    <div>
+        <label>Regissör</label>
+        <input type="text" name="Director" />
+    </div>
+    <div>
+        <label>Skådespelare</label>
+        <input type="text" name="Actors" />
+    </div>
+    <div>
+        <label>Originaltitel</label>
+        <input type="text" name="OriginalTitle" />
+    </div>
+    <div>
+        <label>Originalspråk</label>
+        <input type="text" name="OriginalLanguage" />
+    </div>
+    <div>
+        <label>Genre</label>
+        <input type="text" name="Genre" />
+    </div>
+    <div>
+        <label>Åldersgräns</label>
+        <input type="text" name="AgeRating" />
+    </div>
+    <div>
+        <label>Längd (minuter)</label>
+        <input type="number" name="DurationMinutes" />
+    </div>
+    <div>
+        <label>Premiär</label>
+        <input type="date" name="Premiere" />
+    </div>
+    <div>
+        <label>Pris</label>
+        <input type="number" name="Price" />
+    </div>
+    <div>
+        <label>Visas nu</label>
+        <input type="checkbox" name="IsShowing" value="true" />
+    </div>
+    <button type="submit">Spara</button>
+</form>
+
+<a href="/Movies">Tillbaka</a>

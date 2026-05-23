@@ -1,0 +1,96 @@
+/* CSS reset nollställer webbläsarens standardmarginaler så att min CSS börjar från noll */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #111;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    padding: 20px;
+    flex: 1;
+}
+
+
+.footer {
+    position: static !important; /* position static override behövs för att motverka Bootstrap's standardstyling */
+    margin-top: 40px;
+    background-color: #1a1a1a;
+    border-top: 2px solid #c9a84c !important; /* !important för att overridea border styling i Bootstraps ramverk */
+    color: #888;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 2px solid #c9a84c;
+    padding: 10px 20px;
+}
+
+/* Stylear element i navbar */
+.navbar-brand, .nav-link {
+    color: #c9a84c !important;
+    font-weight: bold;
+}
+
+/* När man håller musen över en länk i navbar */
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Rubriker */
+h1, h2, h3 {
+    color: #c9a84c;
+    margin-bottom: 15px;
+}
+
+/* Knappar och länkar */
+a {
+    color: #c9a84c;
+    text-decoration: none;
+}
+
+/* Länkar blir vita när man håller musen över dem */
+a:hover {
+    color: #fff;
+}
+
+/* Styling för knappar */
+button, input[type="submit"] {
+    background-color: #c9a84c;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* När man håller musen över en knapp */
+button:hover, input[type="submit"]:hover {
+    background-color: #e8c068;
+}
+
+/* Formulär */
+input[type="text"], input[type="password"],
+input[type="number"], input[type="date"], select {
+    background-color: #222;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px 0 15px 0;
+}

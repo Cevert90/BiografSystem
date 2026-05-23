@@ -1,0 +1,3 @@
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd 'C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi'; dotnet run"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd 'C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi'; dotnet run"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd 'C:\Users\Unit_\RiderProjects\BiografSystem\CinemaFrontend'; dotnet run"

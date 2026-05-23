@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CinemaFrontend/CinemaFrontend.csproj" />
+  <Project Path="MoviesApi/MoviesApi.csproj" />
+  <Project Path="ScreeningsApi/ScreeningsApi.csproj" />
+</Solution>

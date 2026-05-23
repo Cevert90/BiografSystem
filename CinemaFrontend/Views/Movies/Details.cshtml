@@ -1,0 +1,48 @@
+﻿@model CinemaFrontend.Models.MovieViewModel
+
+<div style="display: flex; gap: 40px; margin-top: 20px;">
+    <div>
+        <img src="@Model.ImageUrl" alt="@Model.Title" style="width: 300px; border-radius: 8px;" />
+    </div>
+    <div>
+        <h1>@Model.Title</h1>
+        
+        <p>@Model.Description</p>
+        
+        <table style="margin-top: 20px;">
+            <tr><td style="color: #888; padding-right: 20px;">REGI</td><td>@Model.Director</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">SKÅDESPELARE</td><td>@Model.Actors</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">GENRE</td><td>@Model.Genre</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">LÄNGD</td><td>@Model.DurationMinutes min</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">PREMIÄR</td><td>@Model.Premiere.ToString("yyyy-MM-dd")</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">ÅLDERSGRÄNS</td><td>@Model.AgeRating</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">SPRÅK</td><td>@Model.OriginalLanguage</td></tr>
+            <tr><td style="color: #888; padding-right: 20px;">ORIGINALTITEL</td><td>@Model.OriginalTitle</td></tr>
+        </table>
+
+        <div style="margin-top: 30px;">
+            @* Visar visningar ifall filmen är aktiv, annars ett meddelande om kommande premiär. *@
+            @if (Model.IsShowing)
+            {
+                <a href="/Screenings/ByMovie/@Model.Id">Se visningar</a>
+            }
+            else
+            {
+                <p style="color: #888;">Inga visningar ännu — kommer snart!</p>
+            }
+        </div>
+
+        @* Redigera och ta bort metoderna visas endast för inloggade användare. *@
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div style="margin-top: 20px;">
+                <a href="/Movies/Edit/@Model.Id">Redigera</a> |
+                <a href="/Movies/Delete/@Model.Id">Ta bort</a>
+            </div>
+        }
+        
+        <div style="margin-top: 10px;">
+            <a href="/Movies">Tillbaka till filmer</a>
+        </div>
+    </div>
+</div>

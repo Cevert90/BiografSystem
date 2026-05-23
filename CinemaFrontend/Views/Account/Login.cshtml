@@ -1,0 +1,18 @@
+﻿<h1>Logga in</h1>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color: red;">@ViewBag.Error</p>
+}
+
+<form method="post">
+    <div>
+        <label>Användarnamn</label>
+        <input type="text" name="username" />
+    </div>
+    <div>
+        <label>Lösenord</label>
+        <input type="password" name="password" />
+    </div>
+    <button type="submit">Logga in</button>
+</form>
