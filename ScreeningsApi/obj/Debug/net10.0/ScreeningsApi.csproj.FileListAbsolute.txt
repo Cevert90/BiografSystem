@@ -34,3 +34,4 @@ C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi\obj\Debug\net10.0\ref\S
 C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Unit_\RiderProjects\BiografSystem\ScreeningsApi\obj\Debug\net10.0\ScreeningsApi.sourcelink.json

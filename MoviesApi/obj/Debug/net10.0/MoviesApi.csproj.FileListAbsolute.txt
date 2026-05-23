@@ -149,3 +149,4 @@ C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi\obj\Debug\net10.0\refint\Mo
 C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi\obj\Debug\net10.0\MoviesApi.pdb
 C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi\obj\Debug\net10.0\MoviesApi.genruntimeconfig.cache
 C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi\obj\Debug\net10.0\ref\MoviesApi.dll
+C:\Users\Unit_\RiderProjects\BiografSystem\MoviesApi\obj\Debug\net10.0\MoviesApi.sourcelink.json

@@ -95,3 +95,4 @@ C:\Users\Unit_\RiderProjects\BiografSystem\cinemafrontend\obj\Debug\net10.0\Cine
 C:\Users\Unit_\RiderProjects\BiografSystem\cinemafrontend\obj\Debug\net10.0\CinemaFrontend.genruntimeconfig.cache
 C:\Users\Unit_\RiderProjects\BiografSystem\cinemafrontend\obj\Debug\net10.0\ref\CinemaFrontend.dll
 C:\Users\Unit_\RiderProjects\BiografSystem\CinemaFrontend\obj\Debug\net10.0\compressed\2fh6j6iork-{0}-afo33q00aw-afo33q00aw.gz
+C:\Users\Unit_\RiderProjects\BiografSystem\CinemaFrontend\obj\Debug\net10.0\CinemaFrontend.sourcelink.json
